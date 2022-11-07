@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
+    "server": "nodemon backend/server.js --ignore client",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seederScript"
@@ -16,6 +16,7 @@
   "dependencies": {
     "dotenv": "^8.6.0",
     "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
     "mongoose": "^5.13.15"
   },
   "devDependencies": {
