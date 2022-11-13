@@ -6,8 +6,8 @@ const {
 } = require("../controller/productControllers");
 
 router.get("/", getProducts); //get all prods from db
-router.get("/:id", getProductById);
-
+ router.get("/:id", getProductById);
+//router.get("/:name", getProductById);
 module.exports = router;
 
 //mongodb+srv://Fatima:<product>@cluster0.q5lwsjl.mongodb.net/shop?retryWrites=true&w=majority

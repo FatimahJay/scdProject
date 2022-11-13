@@ -12,8 +12,8 @@ const getProducts = async (req, res) => {
 
 const getProductById = async (req, res) => {
   try {
-    const product = await Product.findById(req.params.id);
-
+     const product = await Product.findById(req.params.id);
+   // const product = await Product.findById(req.params.name);
     res.json(product);
   } catch (error) {
     console.error(error);
